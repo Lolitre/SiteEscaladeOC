@@ -16,8 +16,12 @@
         <dependency>
             <groupId>fr.lescoffit.SiteEscalade</groupId>
             <artifactId>model</artifactId>
-            <version></version>
         </dependency>
-    </dependencies>
 
+    <!-- ===== Librairies ===== -->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-jdbc</artifactId>
+    </dependency>
+    </dependencies>
 </project>

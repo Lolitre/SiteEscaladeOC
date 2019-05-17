@@ -1,4 +1,4 @@
-package tempModel;
+package com.model;
 
 import java.io.Serializable;
 import java.util.List;
@@ -15,21 +15,21 @@ public class Topo implements Serializable {
 
     private String nom;
 
-    private String région;
+    private String region;
 
-    //bi-directional many-to-one association to Commentaire
+    //bi-directional many-to-one association to com.model.Commentaire
     //OneToMany(mappedBy="topo")
     private List<Commentaire> commentaires;
 
-    //bi-directional many-to-one association to Site
+    //bi-directional many-to-one association to com.model.Site
     //OneToMany(mappedBy="topo")
     private List<Site> sites;
 
-    //bi-directional many-to-many association to Tag
+    //bi-directional many-to-many association to com.model.Tag
     //ManyToMany(mappedBy="topos")
     private List<Tag> tags;
 
-    //bi-directional many-to-one association to User
+    //bi-directional many-to-one association to com.model.User
     //ManyToOne
     private User user;
 
@@ -68,12 +68,12 @@ public class Topo implements Serializable {
         this.nom = nom;
     }
 
-    public String getRégion() {
-        return this.région;
+    public String getRegion() {
+        return this.region;
     }
 
-    public void setRégion(String région) {
-        this.région = région;
+    public void setRegion(String region) {
+        this.region = region;
     }
 
     public List<Commentaire> getCommentaires() {

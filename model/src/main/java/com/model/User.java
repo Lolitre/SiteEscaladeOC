@@ -1,3 +1,5 @@
+package com.model;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -11,11 +13,11 @@ public class User implements Serializable {
 
     private String nom;
 
-    //bi-directional many-to-one association to Commentaire
+    //bi-directional many-to-one association to com.model.Commentaire
     //OneToMany(mappedBy="user")
     private List<Commentaire> commentaires;
 
-    //bi-directional many-to-one association to Topo
+    //bi-directional many-to-one association to com.model.Topo
     //OneToMany(mappedBy="user")
     private List<Topo> topos;
 

@@ -1,4 +1,4 @@
-package DAO;
+package com.consumer.DAO;
 
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 

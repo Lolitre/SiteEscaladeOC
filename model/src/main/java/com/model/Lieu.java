@@ -1,3 +1,5 @@
+package com.model;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -7,7 +9,7 @@ public class Lieu implements Serializable {
 
     private int idLieu;
 
-    private String accèsRoutier;
+    private String accesRoutier;
 
     private int altitude;
 
@@ -21,7 +23,7 @@ public class Lieu implements Serializable {
 
     private String ville;
 
-    //bi-directional many-to-one association to Site
+    //bi-directional many-to-one association to com.model.Site
     //OneToMany(mappedBy="lieu")
     private List<Site> sites;
 
@@ -36,12 +38,12 @@ public class Lieu implements Serializable {
         this.idLieu = idLieu;
     }
 
-    public String getAccèsRoutier() {
-        return this.accèsRoutier;
+    public String getAccesRoutier() {
+        return this.accesRoutier;
     }
 
-    public void setAccèsRoutier(String accèsRoutier) {
-        this.accèsRoutier = accèsRoutier;
+    public void setAccesRoutier(String accesRoutier) {
+        this.accesRoutier = accesRoutier;
     }
 
     public int getAltitude() {

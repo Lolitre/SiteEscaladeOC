@@ -1,3 +1,5 @@
+package com.model;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -7,11 +9,11 @@ public class Longueur implements Serializable {
 
     private int idLongueur;
 
-    //bi-directional many-to-one association to Voie
+    //bi-directional many-to-one association to com.model.Voie
     //ManyToOne
     private Voie voie;
 
-    //bi-directional many-to-many association to Difficulte
+    //bi-directional many-to-many association to com.model.Difficulte
     /*ManyToMany
     @JoinTable(
             name="longueur_difficulte"

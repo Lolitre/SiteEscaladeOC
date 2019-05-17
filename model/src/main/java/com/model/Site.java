@@ -1,7 +1,7 @@
-package tempModel;
+package com.model;
 
-import java.io.Serializable;
 import java.util.List;
+import java.io.Serializable;
 
 public class Site implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -13,15 +13,15 @@ public class Site implements Serializable {
 
     private String type;
 
-    //bi-directional many-to-one association to Secteur
+    //bi-directional many-to-one association to com.model.Secteur
     //OneToMany(mappedBy="site")
     private List<Secteur> secteurs;
 
-    //bi-directional many-to-one association to Lieu
+    //bi-directional many-to-one association to com.model.Lieu
     //ManyToOne
     private Lieu lieu;
 
-    //bi-directional many-to-one association to Topo
+    //bi-directional many-to-one association to com.model.Topo
     //ManyToOne
     private Topo topo;
 

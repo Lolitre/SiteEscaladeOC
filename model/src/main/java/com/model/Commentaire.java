@@ -1,3 +1,5 @@
+package com.model;
+
 import java.io.Serializable;
 
 public class Commentaire implements Serializable {
@@ -10,11 +12,11 @@ public class Commentaire implements Serializable {
 
     private String texte;
 
-    //bi-directional many-to-one association to Topo
+    //bi-directional many-to-one association to com.model.Topo
     //ManyToOne
     private Topo topo;
 
-    //bi-directional many-to-one association to User
+    //bi-directional many-to-one association to com.model.User
     //ManyToOne
     private User user;
 

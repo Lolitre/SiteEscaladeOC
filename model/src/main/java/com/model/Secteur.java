@@ -1,3 +1,5 @@
+package com.model;
+
 import java.util.List;
 import java.io.Serializable;
 
@@ -17,11 +19,11 @@ public class Secteur implements Serializable {
 
     private String secteurcol;
 
-    //bi-directional many-to-one association to Site
+    //bi-directional many-to-one association to com.model.Site
     //ManyToOne
     private Site site;
 
-    //bi-directional many-to-one association to Voie
+    //bi-directional many-to-one association to com.model.Voie
     //OneToMany(mappedBy="secteur")
     private List<Voie> voies;
 

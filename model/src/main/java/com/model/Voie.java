@@ -1,3 +1,5 @@
+package com.model;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -9,15 +11,15 @@ public class Voie implements Serializable {
 
     private String nom;
 
-    //bi-directional many-to-one association to Longueur
+    //bi-directional many-to-one association to com.model.Longueur
     //OneToMany(mappedBy="voie")
     private List<Longueur> longueurs;
 
-    //bi-directional many-to-one association to Secteur
+    //bi-directional many-to-one association to com.model.Secteur
     //ManyToOne
     private Secteur secteur;
 
-    //bi-directional many-to-many association to Difficulte
+    //bi-directional many-to-many association to com.model.Difficulte
     /*ManyToMany
     @JoinTable(
             name="voie_difficulte"

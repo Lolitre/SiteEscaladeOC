@@ -1,4 +1,4 @@
-package tempModel;
+package com.model;
 
 import java.io.Serializable;
 import java.util.List;
@@ -11,7 +11,7 @@ public class Tag implements Serializable {
 
     private String nom;
 
-    //bi-directional many-to-many association to Topo
+    //bi-directional many-to-many association to com.model.Topo
     //ManyToMany
     /*JoinTable(
             name="tags_topo"

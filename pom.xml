@@ -4,43 +4,35 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>fr.lescoffit.SiteEscalade</groupId>
-    <artifactId>SiteEscalade</artifactId>
-    <packaging>pom</packaging>
+    <groupId>fr.llescoffit</groupId>
+    <artifactId>SIteescalade</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>webapp</module>
-        <module>business</module>
-        <module>consumer</module>
-        <module>model</module>
-    </modules>
+    <packaging>war</packaging>
 
-    <dependencyManagement>
-        <dependencies>
-            <!-- ===== Modules ===== -->
-                       <dependency>
-                <groupId>fr.lescoffit.SiteEscaladeo</groupId>
-                <artifactId>webapp</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>fr.lescoffit.SiteEscalade</groupId>
-                <artifactId>business</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>fr.lescoffit.SiteEscalade</groupId>
-                <artifactId>consumer</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>fr.lescoffit.SiteEscalade</groupId>
-                <artifactId>model</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
+    <dependencies>
+        <!-- ===== Librairies ===== -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.1.6.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-core</artifactId>
+            <version>2.5.20</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.16</version>
+        </dependency>
 
-            <!-- ===== Librairies ===== -->
-        </dependencies>
-    </dependencyManagement>
+    </dependencies>
 
 </project>

@@ -6,10 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="consumer" />
-        <module name="model" />
-        <module name="business" />
-        <module name="webapp" />
+        <module name="SiteEscaladeOC" />
       </profile>
     </annotationProcessing>
   </component>

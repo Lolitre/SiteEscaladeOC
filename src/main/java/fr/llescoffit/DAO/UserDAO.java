@@ -2,15 +2,19 @@ package fr.llescoffit.DAO;
 
 import fr.llescoffit.Model.User;
 
+import java.util.List;
+
 public interface UserDAO {
 
     void add(User user);
 
-    void remvoe(User user);
+    void remove(User user);
 
-    void select(User user);
+    List<User> select();
 
-    void channgeMDP(User user);
+    void changeMDP(User user);
+
+    String connexion(User user);
 
 
 }

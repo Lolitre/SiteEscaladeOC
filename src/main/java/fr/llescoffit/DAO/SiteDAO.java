@@ -2,6 +2,8 @@ package fr.llescoffit.DAO;
 
 import fr.llescoffit.Model.Site;
 
+import java.util.List;
+
 public interface SiteDAO {
 
 
@@ -9,9 +11,7 @@ public interface SiteDAO {
 
     void remove(Site site);
 
-    void edit(Site site);
+    List<Site> select(Site site);
 
-    void select(Site site);
-
-    void selectwithtags(Site site,String rsql);
+    List<Site> selectWithTags(Site site,String rsql);
 }

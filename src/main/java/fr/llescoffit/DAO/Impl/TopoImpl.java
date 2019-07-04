@@ -72,7 +72,7 @@ public class TopoImpl implements TopoDAO {
 
     }
 
-
+    //Selection des topo d'un Site.
     public List<Topo> selectfromSite(Topo topo, Site site) {
         DriverManagerDataSource source = new DriverManagerDataSource();
         source.setDriverClassName("com.mysql.cj.jdbc.Driver");

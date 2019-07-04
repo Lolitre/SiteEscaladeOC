@@ -10,9 +10,9 @@ public interface CommentaireDAO{
 
     void add(Commentaire com, User user,Site site);
 
-    void remove(Commentaire com,User user);
+    void remove(Commentaire com,User user,Site site);
 
-    void edit(Commentaire com,User user);
+    void edit(Commentaire com,User user, Site site);
 
     List<Commentaire> selectfromSite(Commentaire com, Site site);
 

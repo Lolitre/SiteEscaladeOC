@@ -10,6 +10,7 @@ import java.util.List;
 
 public class SiteImpl implements SiteDAO {
 
+    // Ajout d'un Site à la base
     public void add(Site site) {
         DriverManagerDataSource source = new DriverManagerDataSource();
         source.setDriverClassName("com.mysql.cj.jdbc.Driver");
@@ -25,6 +26,7 @@ public class SiteImpl implements SiteDAO {
 
     }
 
+    //Suppression d'un site
     public void remove(Site site) {
         DriverManagerDataSource source = new DriverManagerDataSource();
         source.setDriverClassName("com.mysql.cj.jdbc.Driver");
@@ -39,6 +41,7 @@ public class SiteImpl implements SiteDAO {
 
     }
 
+    //Selection de tout les sites.
     public List<Site> select(Site site)
     {
         DriverManagerDataSource source = new DriverManagerDataSource();
@@ -53,7 +56,10 @@ public class SiteImpl implements SiteDAO {
         return vJdbcTemplate.query(rsql, new SiteMapper());
     }
 
+    //Selection de sites selon les tags
     public List<Site> selectWithTags(Site site, String rsql) {
+
+
 
         DriverManagerDataSource source = new DriverManagerDataSource();
         source.setDriverClassName("com.mysql.cj.jdbc.Driver");
